@@ -29,11 +29,11 @@ if __name__ == "__main__" {
 }
 ```
 ## Installation
-You can install Bython directly from PyPI using pip (with or without sudo -H, depending on your Python installation):
+You can install Bython directly from PyPI using pip (with or without `sudo -H`, depending on your Python installation):
 ```
 $ sudo -H pip3 install bython
 ```
-If you, for some reason, want to install it from the git repository, you can use git clone and do a local install instead:
+If you, for some reason, want to install it from the git repository, you can use `git clone` and do a local install instead:
 ```
 $ git clone https://github.com/mathialo/bython.git
 $ cd bython
@@ -47,7 +47,8 @@ $ sudo pip3 uninstall bython
 ```
 which will undo all the changes.
 
-Quick intro
+## Quick intro
+
 Bython works by first translating Bython files (suggested file ending: .by) into Python files, and then using Python to run them. You therefore need a working installation of Python for Bython to work.
 
 To run a Bython program, simply type:
@@ -76,14 +77,14 @@ For a more in-depth intro, consult the [bython introduction](INTRODUCTION.md).
 ## Structure of the repository
 At the moment, Bython is written in Python. The git repository is structured into four directories:
 
-### bython
+### `bython`
 This directory contains a Python package with the parser and other utilities used by the main script.
 
-### etc
+### `etc`
 This directory contains manual pages and other auxiliary files.
 
-### scripts
+### `scripts`
 This directory contains the runnable Python scripts, i.e., the ones run from the shell.
 
-### testcases
+### `testcases`
 This directory contains a couple of sample *.by and *.py files intended for testing the implementation.
